@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                background: url(https://assets.pokemon.com/static2/_ui/img/chrome/body_gray_bg.png);
+                overflow-x: hidden;
+            }
+            .left{
+                position: absolute;
+                left: -400px;
+                top: 0px;
+            }
+            .middle{
+                position: absolute;
+                left: 200px;
+                top: 0px;
+            }
+            .right{
+                position: absolute;
+                left: 800px;
+                top: 0px;
+            }
+            .arrow {
+                border: solid black;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+            }
+            .aleft {
+                transform: rotate(135deg);
+                -webkit-transform: rotate(135deg);
+            }
+            .button{
+                background: none;
+                border: none;
+                width: 80px;
+                position: absolute;
+                top: 50%;
+                z-index: 100000;
+            }
+            .aleft{
+                transform: rotate(180deg);
+                left: 2%;
+            }
+            .aright{
+                right: 2%;
+            }
+            le::before {
+                content:  url(https://assets.pokemon.com/static2/_ui/img/chrome/video-play-button.png);
+                position: absolute;
+                transform: translate(-70%, 80%);
+                transition: 0.3s;
+                z-index: 1000000;
+            }
+            le:hover:before {
+                content: url(https://assets.pokemon.com/static2/_ui/img/chrome/video-play-button-hover.png);
+                position: absolute;
+                transform: translate(-70%, 80%);
+                transition: 0.3s;
+            }
+            m::before {
+                content:  url(https://assets.pokemon.com/static2/_ui/img/chrome/video-play-button.png);
+                position: absolute;
+                transform: translate(400%, 80%);
+                transition: 0.3s;
+                z-index: 1000000;
+            }
+            m:hover:before {
+                content: url(https://assets.pokemon.com/static2/_ui/img/chrome/video-play-button-hover.png);
+                position: absolute;
+                transform: translate(400%, 80%);
+                transition: 0.3s;
+            }
+            r::before {
+                content:  url(https://assets.pokemon.com/static2/_ui/img/chrome/video-play-button.png);
+                position: absolute;
+                transform: translate(1000%, 80%);
+                transition: 0.3s;
+                z-index: 1000000;
+            }
+            r:hover:before {
+                content: url(https://assets.pokemon.com/static2/_ui/img/chrome/video-play-button-hover.png);
+                position: absolute;
+                transform: translate(1000%, 80%);
+                transition: 0.3s;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="left()" class="button aleft"><img width="100%" src="https://istiyaq123.github.io/assets/Shape%201.png"></button>
+        <button onclick="right()" class="button aright"><img width="100%" src="https://istiyaq123.github.io/assets/Shape%201.png"></button>
+        <span id="leftplay"><le></span><img id="left" class="left" src="https://cdn.bulbagarden.net/upload/thumb/a/af/JN004.png/800px-JN004.png" height="327">
+        <span id="middleplay"><m></span><img id="middle" class="middle" src="https://cdn.bulbagarden.net/upload/thumb/a/ad/JN001.png/800px-JN001.png" height="327">
+        <span id="rightplay"><r></span><img id="right" class="right" src="https://cdn.bulbagarden.net/upload/thumb/1/13/JN002.png/800px-JN002.png" height="327">
+        <script src="https://pokemontv.netlify.app/api/v2/slider.js"></script>
+    </body>
+</html>
