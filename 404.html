@@ -37,15 +37,14 @@
                 border: none;
                 width: 80px;
                 position: absolute;
-                top: 50%;
-                z-index: 100000;
+                transform: translate(10%, 170%);
+                z-index: 10000000;
             }
             .aleft{
-                transform: rotate(180deg);
-                left: 2%;
+                transform: translate(0%, 170%);
             }
             .aright{
-                right: 2%;
+                transform: translate(1590%, 170%);
             }
             le::before {
                 content:  url(https://assets.pokemon.com/static2/_ui/img/chrome/video-play-button.png);
@@ -89,7 +88,7 @@
         </style>
     </head>
     <body>
-        <button onclick="left()" class="button aleft"><img width="100%" src="https://istiyaq123.github.io/assets/Shape%201.png"></button>
+        <button onclick="left()" class="button aleft"><img width="100%" src="https://istiyaq123.github.io/assets/Shape%202.png"></button>
         <button onclick="right()" class="button aright"><img width="100%" src="https://istiyaq123.github.io/assets/Shape%201.png"></button>
         <span id="leftplay"><le></span><img id="left" class="left" src="https://cdn.bulbagarden.net/upload/thumb/a/af/JN004.png/800px-JN004.png" height="327">
         <span id="middleplay"><m></span><img id="middle" class="middle" src="https://cdn.bulbagarden.net/upload/thumb/a/ad/JN001.png/800px-JN001.png" height="327">
